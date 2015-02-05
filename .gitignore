@@ -2,6 +2,9 @@ app/components
 _ign*
 .DS_Store
 
+# Ignoring 'compiled' App
+mobile/www
+
 # Logs
 logs
 *.log
