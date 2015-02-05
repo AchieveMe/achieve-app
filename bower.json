@@ -1,0 +1,15 @@
+{
+  "name": "achieve-app",
+  "version": "1.0.0",
+  "description": "Achieve App",
+  "authors": ["AchieveMe"],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ]
+}
