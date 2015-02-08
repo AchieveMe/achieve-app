@@ -15,7 +15,6 @@ gulp.task('less', function () {
   .pipe($.if(global.BUILD, $.minifyCss({keepSpecialComments: 0})))
   .pipe($.if(!global.BUILD, $.sourcemaps.write('./')))
   .pipe(gulp.dest(settings.path.dist + 'css/'))
-  .pipe($.livereload());
 });
 
 gulp.task('less:watch', ['less'], function () {
