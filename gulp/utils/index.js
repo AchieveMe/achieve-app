@@ -1,10 +1,10 @@
-var $ = require('gulp-load-plugins')();
+var $     = require('gulp-load-plugins')();
 var utils = {};
 
 utils.showError = function (e) {
   $.util.beep();
 
-  console.log('\n' + $.util.colors.white.bgRed(new Array(10).join('=')));
+  console.log('\n' + $.util.colors.white.bgRed(new Array(10).join('=')) + '\n');
 
   $.notify.onError({
     message: "<%= error.message %>",
@@ -12,7 +12,7 @@ utils.showError = function (e) {
     onLast: true
   })(e);
 
-  console.log('\n' + $.util.colors.white.bgRed(new Array(10).join('=')));
+  console.log('\n' + $.util.colors.white.bgRed(new Array(10).join('=')) + '\n');
 };
 
 module.exports = utils;
