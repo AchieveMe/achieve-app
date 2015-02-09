@@ -5,9 +5,9 @@ var $        = require('gulp-load-plugins')();
 
 
 gulp.task('server', function () {
-  gulp.src(settings.path.dist)
-  .pipe($.webserver({
-    port: 4242,
-    livereload: true
-  }))
+  $.connect.server({
+    root: settings.path.dist,
+    livereload: true,
+    port: 4242
+  });
 });

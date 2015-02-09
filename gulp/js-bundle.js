@@ -52,6 +52,7 @@ gulp.task('js-bundle:watch', function () {
       errorHandler: utils.showError
     }))
     .pipe(gulp.dest(settings.path.dist + 'js/'))
+    .pipe($.connect.reload())
   }
 });
 

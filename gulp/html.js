@@ -10,6 +10,7 @@ gulp.task('html', function () {
     errorHandler: utils.showError
   }))
   .pipe(gulp.dest(settings.path.dist))
+  .pipe($.connect.reload())
 });
 
 gulp.task('html:watch', ['html'], function () {

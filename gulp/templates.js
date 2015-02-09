@@ -18,6 +18,7 @@ gulp.task('templates', function () {
     module: settings.moduleName
   }))
   .pipe(gulp.dest(settings.path.dist + 'js/'))
+  .pipe($.connect.reload())
 });
 
 gulp.task('templates:watch', ['templates'], function () {
